@@ -8,7 +8,7 @@ from config import *
 
 if __name__ == "__main__":
     print("Preparing data...")
-    train_data, val_data, test_data = process_speech_commands(max_samples_per_split=8000, fixed_length=FIXED_LENGTH)
+    train_data, val_data, test_data = process_speech_commands(fixed_length=FIXED_LENGTH)
 
     print("Initializing model...")
     model = initialize_model()
